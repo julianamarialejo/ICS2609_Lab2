@@ -1,53 +1,40 @@
-﻿# ICS2609_Lab2
- 
-Project Overview:
-  This project is about the application of a CRUD API using Node.js, Express, and MySQL.
+﻿# ICS2609_Lab2 - CRUD API Implementation
 
---------------------------------------------------------------------------------------------
+## Project Overview
+This project is a CRUD API built with Node.js, Express, and MySQL. It focuses on managing student records through create, read, update, and delete operations. 
+The goal is to provide a simple backend system for handling student information.
 
-Setup Steps:
-  Part 1: Create the Database (XAMPP GUI or Terminal)
-  Part 2: Express Project Setup & Base Files (Health Check + DB Handshake)
-  Part 3: Implement CRUD (Routes, Controllers, and CORS)
-  Part 4: Testing the API with Postman (CRUD & Health)
-  Part 5: Supplemental Activity (New Table + CRUD + GitHub)
+##  Setup Steps/How to Run
+1. Download this repository
+> https://github.com/julianamarialejo/ICS2609_Lab2 
 
---------------------------------------------------------------------------------------------
+2. Install dependencies
+> npm install
 
-How to Run:
-  Install Dependencies
-    npm install
-    
-  Create .env file
-    DB_HOST=localhost
-    DB_USER=juliana_alejo
-    DB_PASS=juliana123
-    DB_NAME=lab_crud
-    PORT=3000
+3. Set up environment variables
+> Copy .env.example to .env
 
-  Run in the terminal
-    npm run dev
+4. Run the server
+> npm run dev
 
-  Run the server
-    http://localhost:3000/api/health
+5. API will be running at:
+> http://localhost:3000
 
---------------------------------------------------------------------------------------------
+6. Test the health with browser
+> http://localhost:3000/api/health
 
-List of Endpoints:
-  Health
-    GET /api/health
-  
-  Students
-    POST /api/students
-    GET /api/students
-    GET /api/students/:id
-    PUT /api/students/:id
-    DELETE /api/students/:id
+## Endpoints
 
-  Courses
-    POST /api/courses
-    GET /api/courses
-    GET /api/courses/:id
-    PUT /api/courses/:id
-    DELETE /api/courses/:id
-  
+Students
+- POST http://localhost:3000/api/students/ – Create student
+- GET http://localhost:3000/api/students/ – Get all students
+- GET http://localhost:3000/api/students/:id – Get student by ID
+- PUT http://localhost:3000/api/students/:id – Update student
+- DELETE http://localhost:3000/api/students/:id – Delete student
+
+Courses
+- POST http://localhost:3000/api/courses/ – Create course
+- GET http://localhost:3000/api/courses/ – Get all courses
+- GET http://localhost:3000/api/courses/:id – Get course by ID
+- PUT http://localhost:3000/api/courses/:id – Update course
+- DELETE http://localhost:3000/api/courses/:id – Delete course

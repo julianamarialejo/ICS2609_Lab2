@@ -26,15 +26,15 @@ The goal is to provide a simple backend system for handling student information.
 ## Endpoints
 
 Students
-- POST http://localhost:3000/api/students/ – Create student
-- GET http://localhost:3000/api/students/ – Get all students
-- GET http://localhost:3000/api/students/:id – Get student by ID
-- PUT http://localhost:3000/api/students/:id – Update student
-- DELETE http://localhost:3000/api/students/:id – Delete student
+- POST /api/students → Create a new student
+- GET /api/students → Get all students
+- GET /api/students/:id → Get student by ID
+- PUT /api/students/:id → Update student by ID
+- DELETE /api/students/:id → Delete student by ID
 
 Courses
-- POST http://localhost:3000/api/courses/ – Create course
-- GET http://localhost:3000/api/courses/ – Get all courses
-- GET http://localhost:3000/api/courses/:id – Get course by ID
-- PUT http://localhost:3000/api/courses/:id – Update course
-- DELETE http://localhost:3000/api/courses/:id – Delete course
+- POST /api/courses → Create a new course
+- GET /api/courses → Get all courses
+- GET /api/courses/:id → Get course by ID
+- PUT /api/courses/:id → Update course by ID
+- DELETE /api/courses/:id → Delete course by ID
